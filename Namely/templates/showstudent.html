@@ -1,0 +1,40 @@
+{%include "header.html"%}
+  
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Name</th>
+        <th scope="col">FatherName</th>
+        <th scope="col">MotherName</th>
+        <th scope="col">Class</th>
+        <th scope="col"> RoleNumber</th>
+        <th scope="col">Email</th>
+      </tr>
+    </thead>
+    <tbody>
+        {%for n in stu%}
+      <tr>
+        <th scope="row">{{n.id}}</th>
+        <td>{{n.name}}</td>
+        <td>{{n.father_name}}</td>
+        <td>{{n.mother_name}}</td>
+        <td>{{n.clas}}</td>
+        <td>{{n.role_number}}</td>
+        <td>{{n.email}}</td>
+      </tr>
+      {%endfor%}
+    </tbody>
+  </table>     
+     
+   
+   
+    
+    
+  </body>
+  <script  src="/static/javascript/script.js"type="text/javascript">
+     
+
+  </script>
+</html>
+

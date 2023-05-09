@@ -1,0 +1,54 @@
+{%include "header.html"%}
+
+
+<div class="container">  
+    <form id="contact" action="addstudent" method="POST">
+        {%csrf_token%}
+      <h3>ADD STUDENT</h3>
+      <h4>please fill this form</h4>
+      <fieldset>
+        <input placeholder="name" type="text" tabindex="1" required autofocus name="name">
+      </fieldset>
+      <fieldset>
+        <input placeholder="FatherName" type="text" tabindex="2" required name="fathername">
+      </fieldset>
+      <fieldset>
+        <input placeholder="mothername" type="text" tabindex="2" required name="mothername">
+      </fieldset>
+      <fieldset>
+        SELECT CLASS
+        <select name="class" id="cars">
+            <option value="LKG">LKG</option>
+            <option value="UKG">UKG</option>
+            <option value="Nersery">Nersery</option>
+            <option value="class1">class1</option>
+            <option value="class2">class2</option>
+            <option value="class3">class3</option>
+            <option value="class4">class4</option>
+            <option value="class5">class5</option>
+            <option value="class6">class6</option>
+            <option value="class7">class7</option>
+            <option value="class8">class8</option>
+            <option value="class9">class9</option>
+            <option value="class10">class10</option>
+            <option value="class11">class11</option>
+            <option value="class12">class12</option>
+          </select>
+
+      </fieldset>
+      <fieldset>
+        <input placeholder="RollNumber" type="text" tabindex="4" required name="rollnumber">
+      </fieldset>
+      <fieldset>
+        <input placeholder="Email" type="email" tabindex="4" required name="email">
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      </fieldset>
+      
+    </form>
+  </div>
+</body>
+<script  src="/static/javascript/script.js"type="text/javascript">
+</script>
+</html>
